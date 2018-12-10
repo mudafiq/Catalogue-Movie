@@ -80,7 +80,6 @@ public class MyAsyncTaskLoader extends AsyncTaskLoader<ArrayList<Movie>> {
                         JSONObject jsonMovie = jsonArray.getJSONObject(i);
                         Movie movie = new Movie(jsonMovie);
                         moviesItems.add(movie);
-                        Log.d("TESTMOVIE", "json masuk");
                     }
                 }catch (Exception e){
                     e.printStackTrace();
